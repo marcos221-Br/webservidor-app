@@ -1,0 +1,25 @@
+main {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 12px;
+
+    h1 {
+        background-color: #f5f5fa;
+        width: 100%;
+        padding: 2px 0 0 5px;
+        border-radius: 5px;
+        color: rgba(0, 0, 0, 0.7);
+        border: 2px solid #cbcbcb;
+        font-size: 18px;
+    }
+}
+
+.container-button ul {
+    list-style: none;
+    margin-top: 5px;
+}
+
+.container-busca {
+    width: 100%;
+}

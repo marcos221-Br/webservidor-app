@@ -1,0 +1,19 @@
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    section {
+        width: 100%;
+    }
+
+    h1 {
+        background-color: #f5f5fa;
+        width: 100%;
+        padding: 2px 0 0 5px;
+        border-radius: 5px;
+        color: rgba(0, 0, 0, 0.7);
+        border: 2px solid #cbcbcb;
+        font-size: 18px;
+    }
+}

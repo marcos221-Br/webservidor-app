@@ -1,0 +1,68 @@
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 20px; /* Aumento do padding para melhor legibilidade */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Suavização da sombra */
+    flex-wrap: wrap;
+    height: auto; /* Mudança para 'auto' para um ajuste melhor do conteúdo */
+}
+
+.container-info {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Suavização da sombra */
+    padding: 12px;
+    border-radius: 8px; /* Bordas mais arredondadas */
+    border: 1px solid #e2e2e2; /* Cor mais suave da borda */
+}
+
+.logout {
+    width: 100%;
+    text-align: center;
+    background-color: #2851a3; /* Cor mais suave e mais acessível */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 6px 4px; /* Ajuste de padding para melhor tato */
+    color: white;
+    border-radius: 8px; /* Aumento do raio da borda para mais modernidade */
+    font-weight: bold;
+    text-decoration: none;
+    margin-top: 5px;
+    transition: background-color 0.3s ease; /* Transição suave para hover */
+}
+
+.logout:hover {
+    background-color: #1e407c; /* Cor mais escura no hover */
+}
+
+.lista-menu {
+    display: flex;
+    list-style: none;
+    gap: 1em;
+    justify-content: center;
+    align-items: center;
+    padding: 0; /* Remover padding padrão */
+    margin: 0; /* Remover margem padrão */
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    color: #28323C;
+    border: 1px solid #28323C; /* Bordas mais finas */
+    text-decoration: none;
+    padding: 10px 15px; /* Ajuste de padding para mais espaço */
+    border-radius: 6px;
+    transition: all 0.3s ease; /* Transição para todas as propriedades */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15); /* Suavização da sombra */
+    font-weight: bold;
+}
+
+.menu-item:hover {
+    color: white;
+    background-color: #1a2e3b; /* Cor mais suave no hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombras mais proeminentes no hover */
+}

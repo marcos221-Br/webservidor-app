@@ -15,3 +15,4 @@ Route::get('/home', [HomeController::class, 'index']);
 Route::get('/processo', [ProcessoController::class, 'index']);
 
 Route::get('/usuario', [UsuarioController::class, 'index']);
+Route::post('/usuario', [UsuarioController::class, 'change']);

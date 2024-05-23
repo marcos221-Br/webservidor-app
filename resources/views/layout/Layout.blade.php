@@ -37,14 +37,15 @@
                 </nav>
             </section>
 
-            @yield('conteudo')
-
             <section class="container-info">
                 <span><strong>Usuário:</strong> {{ session()->get('usuario')->nome; }}</span>
                 <span><strong>OAB:</strong> {{ session()->get('usuario')->oab; }}</span>
                 <a href="/logout" class="logout">Logout</a>
             </section>
         </header>
+
+        @yield('conteudo')
+        
         <footer>
             <p>&copy; Copyright - EMF System LTDA - ME - 2024</p>
             <p>Atualizado em 16/04/2024</p>

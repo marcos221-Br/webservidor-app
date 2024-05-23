@@ -13,7 +13,8 @@ Route::get('/logout', [LoginController::class, 'logout']);
 Route::get('/home', [HomeController::class, 'index']);
 
 Route::get('/processo', [ProcessoController::class, 'index']);
-Route::get('/processo/{numeroprocesso}', [ProcessoController::class, 'visualizer']);
+Route::get('/processo/visualizar/{numeroprocesso}', [ProcessoController::class, 'visualizer'], ['numeroprocesso']);
+Route::post('/processo/visualizar', [ProcessoController::class, 'visualizer']);
 
 Route::get('/usuario', [UsuarioController::class, 'index']);
 Route::post('/usuario', [UsuarioController::class, 'change']);

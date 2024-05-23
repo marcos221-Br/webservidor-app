@@ -28,10 +28,10 @@
                             </a>
                         </li>
                         <li>
-                            <a href="/processo" class="menu-item"><img src="../images/icons/processos.png" alt="Icon Processos">Processos</a>
+                            <a href="/processo" class="menu-item"><img src="/images/icons/processos.png" alt="Icon Processos">Processos</a>
                         </li>
                         <li>
-                            <a href="/usuario" class="menu-item"><img src="../images/icons/user.png" alt="Icon User">Usuário</a>
+                            <a href="/usuario" class="menu-item"><img src="/images/icons/user.png" alt="Icon User">Usuário</a>
                         </li>
                     </ul>
                 </nav>

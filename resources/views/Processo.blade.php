@@ -12,7 +12,8 @@
     <main>
         <h1>Processos</h1>
         <section class="container-busca">
-            <form method="get" action="/processo">
+            <form method="post" action="/processo/visualizar">
+                @csrf
                 <label class="barra-busca">
                     <input type="text" maxlength="16" name="nmrProcesso" placeholder="Informe o número do processo..." class="input-processo">
                     <button type="submit" name="pesquisar"><img src="/images/icons/search_icon.png" alt="Ícone de busca"></button>
@@ -83,7 +84,7 @@
                     @endif
                 </td>
                 <td><a href="../controller/processo/processos.dados.controller.php?acao=editar&nmrProcesso={{ $processo->numeroprocesso }}"><img src="/images/icons/edit_icon.png" alt="Ícone Editar"></a></td>
-                <td><a href="../controller/processo/processos.dados.controller.php?acao=visualizar&nmrProcesso={{ $processo->numeroprocesso }}"><img src="/images/icons/visibility_icon.png" alt="Ícone Visualizar"></a></td>
+                <td><a href="/processo/visualizar/{{ $processo->numeroprocesso }}"><img src="/images/icons/visibility_icon.png" alt="Ícone Visualizar"></a></td>
                 <td><a href="#" onclick="showDeleteModal('{{ $processo->numeroprocesso }}');"><img src="/images/icons/delete.png" alt="Ícone Excluir"></a></td>
             </tr>
         @endforeach

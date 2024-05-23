@@ -49,7 +49,7 @@
                                 <td>{{ $processo->numeroprocesso }}</td>
                                 <td>{{ $processo->cliente }}</td>
                                 <td>{{ $processo->proximoprazo }}</td>
-                                <td><a href="/processo/{{ $processo->numeroprocesso }}"><img src="../images/icons/visibility_icon.png" alt="Ícone Visualizar"></a></td>
+                                <td><a href="/processo/visualizar/{{ $processo->numeroprocesso }}"><img src="/images/icons/visibility_icon.png" alt="Ícone Visualizar"></a></td>
                             </tr>
                         @endforeach
                     @endif

@@ -15,7 +15,7 @@ return new class extends Migration
             $table->id();
             $table->double('honorario');
             $table->integer('parcelas');
-            $table->bigInteger('idprocesso')->unsigned();
+            $table->bigInteger('idprocesso');
             $table->timestamps();
             $table->foreign('idprocesso')->references('id')->on('processos');
         });

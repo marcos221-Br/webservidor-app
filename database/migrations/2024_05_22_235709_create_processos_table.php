@@ -14,10 +14,11 @@ return new class extends Migration
         Schema::create('processos', function (Blueprint $table) {
             $table->id();
             $table->bigInteger('numeroprocesso');
+            $table->string('cliente');
             $table->string('descricao');
             $table->boolean('escritorio');
             $table->string('proximoprazo');
-            $table->bigInteger('idusuario')->unsigned();
+            $table->bigInteger('idusuario');
             $table->timestamps();
             $table->foreign('idusuario')->references('id')->on('usuarios');
         });

@@ -25,6 +25,9 @@ class ProcessoController extends Controller
         }else{
             $processo = Processo::where('numeroprocesso',$request->input('nmrProcesso'))->where('idusuario',session()->get('usuario')->id)->first();
         }
+        if(empty($processo)){
+            return redirect('/processo');
+        }
         $honorario = Honorario::where('idprocesso',$processo->id)->first();
         return view('Form_processo',['rotulo' => $rotulo, 'erros' => $erros, 'acao' => $acao, 'processo' => $processo, 'honorario' => $honorario]);
     }

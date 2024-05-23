@@ -8,6 +8,7 @@ use App\Http\Controllers\UsuarioController;
 
 Route::get('/', [LoginController::class, 'index']);
 Route::post('/', [LoginController::class, 'login']);
+Route::get('/logout', [LoginController::class, 'logout']);
 
 Route::get('/home', [HomeController::class, 'index']);
 

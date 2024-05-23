@@ -21,28 +21,28 @@
 
             <section>
                 <nav class="container-menu">
-                    <!--<ul class="lista-menu">
+                    <ul class="lista-menu">
                         <li>
-                            <a href="../controller/home/home.controller.php" class="menu-item">
-                                <img src="../images/icons/home.png" alt="Icon Home"> Página Inicial
+                            <a href="/home" class="menu-item">
+                                <img src="/images/icons/home.png" alt="Icon Home"> Página Inicial
                             </a>
                         </li>
                         <li>
-                            <a href="../controller/processo/processos.controller.php" class="menu-item"><img src="../images/icons/processos.png" alt="Icon Processos">Processos</a>
+                            <a href="/processo" class="menu-item"><img src="../images/icons/processos.png" alt="Icon Processos">Processos</a>
                         </li>
                         <li>
-                            <a href="../controller/usuario/usuario.controller.php" class="menu-item"><img src="../images/icons/user.png" alt="Icon User">Usuário</a>
+                            <a href="/usuario" class="menu-item"><img src="../images/icons/user.png" alt="Icon User">Usuário</a>
                         </li>
-                    </ul>-->
+                    </ul>
                 </nav>
             </section>
 
             @yield('conteudo')
 
             <section class="container-info">
-                <!--<span><strong>Usuário:</strong> <= $usuario->getNome(); ?></span>
-                <span><strong>OAB:</strong> <= $usuario->getOab(); ?></span>
-                <a href="../controller/login/logout.php" class="logout">Logout</a>-->
+                <span><strong>Usuário:</strong> {{ session()->get('usuario')->nome; }}</span>
+                <span><strong>OAB:</strong> {{ session()->get('usuario')->oab; }}</span>
+                <a href="/logout" class="logout">Logout</a>
             </section>
         </header>
         <footer>

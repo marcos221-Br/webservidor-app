@@ -16,12 +16,18 @@ class LoginController extends Controller
         $oab = $request->input('oab');
         $senha = $request->input('senha');
 
-        $usuario = new Usuario($oab,$senha);
+        $usuario = Usuario::where('oab',$oab)->first();
 
-        if($usuario->buscarUsuario()){
+        if($usuario != null && $usuario->senha == $senha){
+            session(['usuario' => $usuario]);
             return redirect('/home');
         }
         $erro = true;
         return view('Login', ['erro' => $erro]);
+    }
+
+    public function logout() {
+        session()->flush();
+        return redirect('/');
     }
 }

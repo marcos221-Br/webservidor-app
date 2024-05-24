@@ -20,6 +20,7 @@ class LoginController extends Controller
 
         if($usuario != null && $usuario->senha == $senha){
             session(['usuario' => $usuario]);
+            session(['logado' => true]);
             return redirect('/home');
         }
         $erro = true;

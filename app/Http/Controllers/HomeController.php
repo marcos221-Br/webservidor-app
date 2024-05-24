@@ -9,6 +9,10 @@ use App\Models\Honorario;
 class HomeController extends Controller
 {
     public function index() {
+        if(!session()->get('logado')){
+            return redirect('/');
+        }
+        
         $processos = Processo::where('idusuario',session()->get('usuario')->id)->get();
         $totalProcessos = $processos->count();
         $totalHonorarios = 0;

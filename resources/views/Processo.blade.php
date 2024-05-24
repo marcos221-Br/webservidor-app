@@ -7,6 +7,8 @@
     <link rel="stylesheet" type="text/css" href="/css/processos.css"/>
     <link rel="stylesheet" type="text/css" href="/css/modal.css"/>
     <link rel="stylesheet" type="text/css" href="/css/form.css"/>
+    <script src="/js/modal.js"></script>
+@endsection
 
 @section('conteudo')
     <main>
@@ -23,7 +25,7 @@
 
         <section class="container-button">
             <ul>
-                <li><a href="/processo/processos.dados.controller.php?acao=incluir" class="button-acao"><img src="/images/icons/incluir.png" alt="Icon Incluir">INCLUIR</a></li>
+                <li><a href="/processo/incluir" class="button-acao"><img src="/images/icons/incluir.png" alt="Icon Incluir">INCLUIR</a></li>
             </ul>
         </section>
 
@@ -83,7 +85,7 @@
                         Não
                     @endif
                 </td>
-                <td><a href="../controller/processo/processos.dados.controller.php?acao=editar&nmrProcesso={{ $processo->numeroprocesso }}"><img src="/images/icons/edit_icon.png" alt="Ícone Editar"></a></td>
+                <td><a href="/processo/editar/{{ $processo->numeroprocesso }}"><img src="/images/icons/edit_icon.png" alt="Ícone Editar"></a></td>
                 <td><a href="/processo/visualizar/{{ $processo->numeroprocesso }}"><img src="/images/icons/visibility_icon.png" alt="Ícone Visualizar"></a></td>
                 <td><a href="#" onclick="showDeleteModal('{{ $processo->numeroprocesso }}');"><img src="/images/icons/delete.png" alt="Ícone Excluir"></a></td>
             </tr>

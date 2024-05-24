@@ -1,7 +1,11 @@
 <?php
 
-class Validacao {
+namespace App;
 
+use Illuminate\Http\Request;
+
+class Validacao
+{
     /**
      * Valida o número do processo.
      * @param string $numero_processo Número do processo a ser validado.
@@ -52,13 +56,13 @@ class Validacao {
      * Valida os dados do formulário de processos.
      * @return array Lista de erros encontrados.
      */
-    public static function getErros(): array {
+    public static function getErros(Request $request): array {
         $erros = [];
-        $nmr_processo = $_POST['nmr_processo'] ?? '';
-        $nome_cliente = $_POST['nome_cliente'] ?? '';
-        $data_proximo_prazo = $_POST['data_proximo_prazo'] ?? '';
-        $honorarios = $_POST['qtd_honorarios'] ?? '';
-        $nmr_parcelas = $_POST['nmr_parcelas'] ?? '';
+        $nmr_processo = $request->input('nmr_processo');
+        $nome_cliente = $request->input('nome_cliente');
+        $data_proximo_prazo = $request->input('data_proximo_prazo');
+        $honorarios = $request->input('qtd_honorarios');
+        $nmr_parcelas = $request->input('nmr_parcelas');
 
         if (empty($nmr_processo)) {
             $erros['nmr_processo_vazio'] = "O campo número do processo é obrigatório.";

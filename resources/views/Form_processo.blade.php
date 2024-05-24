@@ -19,7 +19,8 @@
             </div>
         @endforeach
 
-        <form action="/processo/editar" class="container-form" method="post">
+        <form action="<?= $acao == 'editar' ? '/processo/editar' : '/processo/incluir' ?>" class="container-form" method="post">
+            @csrf
             <label class="rotulo" style=" @if($acao == 'editar') display: none @endif ">
                 Número do processo *
                 <input placeholder="Informe o número do processo" type="text" name="nmr_processo" id="nmr_processo"  maxlength="16" class="input-dado"

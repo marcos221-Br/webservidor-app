@@ -8,11 +8,19 @@ use App\Models\Usuario;
 class UsuarioController extends Controller
 {
     public function index() {
+        if(!session()->get('logado')){
+            return redirect('/');
+        }
+        
         $erro = '';
         return view('Usuario', ['erro' => $erro]);
     }
 
     public function change(Request $request) {
+        if(!session()->get('logado')){
+            return redirect('/');
+        }
+        
         $senhaAntiga = $request->input('senha_antiga');
         $senhaNova = $request->input('senha_nova');
         $nome = $request->input('nome_user');

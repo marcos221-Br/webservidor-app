@@ -1,4 +1,4 @@
-# Projeto-Web-Servidor
+php artisan key:generate# Projeto-Web-Servidor
 
 Projeto realizado para disciplina de Desenvolvimento Web Servidor
 

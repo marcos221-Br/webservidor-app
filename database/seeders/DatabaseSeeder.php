@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
     {
         Usuario::factory()->create([
             'nome' => 'Admin',
-            'oab' => '999999',
+            'oab' => '99999',
             'senha' => 'admin',
         ]);
     }

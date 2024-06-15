@@ -40,3 +40,4 @@ function showEditModal(nmrProcesso) {
     document.getElementById('editModal').style.display = 'block'; // Certifique-se de ter um modal com id 'editModal'
     document.getElementById('numero_processo_edit').innerHTML = `<strong>${nmrProcesso}</strong>`; // E um span com id 'numero_processo_edit'
 }
+

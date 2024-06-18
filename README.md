@@ -1,22 +1,25 @@
-php artisan key:generate# Projeto-Web-Servidor
+# Projeto-Web-Servidor
 
-Projeto realizado para disciplina de Desenvolvimento Web Servidor
+Este projeto de software baseado na web foi desenvolvido para a disciplina de Desenvolvimento Web do lado do servidor, com o objetivo de facilitar a organização e o fácil acesso dos advogados aos dados de seus clientes e seus respectivos processos.
 
-## Projeto:
-**Projeto Web**
-> Um software web com o propósito de organização de dados referentes a processos, onde cada advogato terá facilmente acesso aos dados de seus clientes e respectivos processos.
+## Descrição do Projeto:
+O **Projeto Web** visa a fornecer uma plataforma centralizada para o gerenciamento e acesso a dados de clientes para facilitar o manejo dos processos dos casos.
 
-### Instalação
-> Baixar o php  
-> Baixar o software Composer  
-> Clonar o repositório do projeto  
-> Ir na pasta do projeto e criar os arquivo .env conforme o exemplo  
-> Criar schemas baseados no schemas disponibilizados por meio do comando php artisan migrate  
-> Alimentar o banco por meio do comando php artisan db:seed  
-> Inicializar o servidor por meio do comando php artisan serve  
-> Ir até o seu navegador e digitar a url mostrada após o comando anterior  
+### Instalação e Configuração:
 
-### Contribuidores
-- **Eduardo Schiliga** -> View / Controller  
-- **Marcos Artêmio Gomes dos Santos** -> Model / Controller  
-- **Fernanda Pachla de lima** -> View / MSG erros nos formulários
+Para configurar este projeto, siga as seguintes etapas:
+
+1. Baixe e instale o PHP: Confira a [página oficial de download do PHP](https://www.php.net/downloads.php) para obter a versão mais recente.
+2. Baixe e instale o Composer: Visite a [página oficial de download do Composer](https://getcomposer.org/download/) para instruções.
+3. Clone o repositório do projeto: `git clone <repository_url>`.
+4. Navegue até o diretório do projeto e crie um arquivo `.env` baseado no exemplo fornecido.
+5. Crie esquemas baseados no exemplo fornecido usando o comando `php artisan migrate`.
+6. Popule o banco de dados usando `php artisan db:seed`.
+7. Inicie o servidor usando `php artisan serve`.
+8. Abra a URL fornecida em seu navegador da web para acessar o aplicativo.
+
+### Colaboradores:
+
+- **Eduardo Schiliga**
+- **Marcos Artêmio Gomes dos Santos**
+- **Fernanda Pachla de Lima**

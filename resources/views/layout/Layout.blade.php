@@ -68,5 +68,5 @@
         <p>Versão: 0.0.1</p>
     </footer>
     </body>
-    <script src="../../js/msgDialog.js"></script>
+    <script src="../../../public/js/msgDialog.js"></script>
 </html>
